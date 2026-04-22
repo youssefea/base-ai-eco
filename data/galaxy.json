@@ -47,6 +47,14 @@
       "description": "The HTTP 402 payment standard enabling AI agents to pay for resources on Base",
       "projects": [
         {
+          "id": "delegare",
+          "name": "Delegare",
+          "description": "Trustless agent payment authorization and settlement layer for x402 workflows on Base.",
+          "website": "https://delegare.dev",
+          "logoUrl": "https://img.logo.dev/delegare.dev?token=pk_doEntPErSqK_U9UDgEekiA&format=png&retina=true",
+          "twitter": "https://x.com/delegaredev"
+        },
+        {
           "id": "meritsystems",
           "name": "Merit Systems",
           "description": "AgentCash — payment rails for AI agents using x402 on Base",
