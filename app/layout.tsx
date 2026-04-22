@@ -17,13 +17,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Base AI Ecosystem",
     description: "Interactive 3D galaxy of projects building on Base.",
-    images: [{ url: "/ecosystem-image", width: 1200, height: 630 }],
+    type: "website",
+    siteName: "Base AI Ecosystem",
   },
   twitter: {
     card: "summary_large_image",
     title: "Base AI Ecosystem",
     description: "Interactive 3D galaxy of projects building on Base.",
-    images: ["/ecosystem-image"],
   },
 };
 
