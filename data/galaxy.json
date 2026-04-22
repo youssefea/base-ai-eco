@@ -1,0 +1,180 @@
+{
+  "categories": [
+    {
+      "id": "wallets",
+      "name": "Wallets",
+      "color": "#0052FF",
+      "description": "Wallet infrastructure and AI-native payment experiences on Base",
+      "projects": [
+        {
+          "id": "bankr",
+          "name": "Bankr",
+          "description": "AI-powered conversational crypto wallet and agent on Base",
+          "website": "https://bankr.bot",
+          "logoUrl": "https://logo.clearbit.com/bankr.bot",
+          "twitter": "https://x.com/bankrbot"
+        },
+        {
+          "id": "cdp",
+          "name": "Coinbase Developer Platform",
+          "description": "APIs, SDKs, and smart wallets to build onchain apps on Base",
+          "website": "https://developer.coinbase.com",
+          "logoUrl": "https://logo.clearbit.com/coinbase.com",
+          "twitter": "https://x.com/CoinbaseDev"
+        },
+        {
+          "id": "elsaai",
+          "name": "Elsa AI",
+          "description": "AI-native wallet bringing conversational finance to crypto",
+          "website": "https://elsa.ai",
+          "logoUrl": "https://logo.clearbit.com/elsa.ai",
+          "twitter": "https://x.com/elsa_ai"
+        },
+        {
+          "id": "paysponge",
+          "name": "PaySponge",
+          "description": "Programmable crypto wallet and payment infrastructure on Base",
+          "website": "https://paysponge.com",
+          "logoUrl": "https://logo.clearbit.com/paysponge.com",
+          "twitter": "https://x.com/paysponge"
+        }
+      ]
+    },
+    {
+      "id": "x402",
+      "name": "x402",
+      "color": "#7B61FF",
+      "description": "The HTTP 402 payment standard enabling AI agents to pay for resources on Base",
+      "projects": [
+        {
+          "id": "meritsystems",
+          "name": "Merit Systems",
+          "description": "AgentCash — payment rails for AI agents using x402 on Base",
+          "website": "https://merit.systems",
+          "logoUrl": "https://logo.clearbit.com/merit.systems",
+          "twitter": "https://x.com/meritsystems_"
+        },
+        {
+          "id": "paysponge-x402",
+          "name": "PaySponge",
+          "description": "x402-compatible wallet enabling AI agents to send and receive payments",
+          "website": "https://paysponge.com",
+          "logoUrl": "https://logo.clearbit.com/paysponge.com",
+          "twitter": "https://x.com/paysponge"
+        },
+        {
+          "id": "exa",
+          "name": "Exa.ai",
+          "description": "AI-powered search API that adopted x402 for agent-native access",
+          "website": "https://exa.ai",
+          "logoUrl": "https://logo.clearbit.com/exa.ai",
+          "twitter": "https://x.com/ExaAILabs"
+        },
+        {
+          "id": "cloudflare",
+          "name": "Cloudflare",
+          "description": "Internet infrastructure provider and co-author of the x402 standard",
+          "website": "https://cloudflare.com",
+          "logoUrl": "https://logo.clearbit.com/cloudflare.com",
+          "twitter": "https://x.com/Cloudflare"
+        },
+        {
+          "id": "nansen",
+          "name": "Nansen",
+          "description": "Onchain analytics platform integrating x402 for agent-accessible data",
+          "website": "https://nansen.ai",
+          "logoUrl": "https://logo.clearbit.com/nansen.ai",
+          "twitter": "https://x.com/nansen_ai"
+        },
+        {
+          "id": "alchemy",
+          "name": "Alchemy",
+          "description": "Web3 development platform and node infrastructure supporting x402 on Base",
+          "website": "https://alchemy.com",
+          "logoUrl": "https://logo.clearbit.com/alchemy.com",
+          "twitter": "https://x.com/AlchemyPlatform"
+        },
+        {
+          "id": "stripe",
+          "name": "Stripe",
+          "description": "Global payments infrastructure now supporting stablecoin and x402 payments",
+          "website": "https://stripe.com",
+          "logoUrl": "https://logo.clearbit.com/stripe.com",
+          "twitter": "https://x.com/stripe"
+        },
+        {
+          "id": "vercel",
+          "name": "Vercel",
+          "description": "Frontend cloud platform supporting x402 for AI-agent accessible deployments",
+          "website": "https://vercel.com",
+          "logoUrl": "https://logo.clearbit.com/vercel.com",
+          "twitter": "https://x.com/vercel"
+        },
+        {
+          "id": "agentmail",
+          "name": "AgentMail",
+          "description": "Email infrastructure for AI agents with x402 payment gating",
+          "website": "https://agentmail.to",
+          "logoUrl": "https://logo.clearbit.com/agentmail.to",
+          "twitter": "https://x.com/agentmail_to"
+        },
+        {
+          "id": "firecrawl",
+          "name": "Firecrawl",
+          "description": "Web scraping and data extraction API integrated with x402 for agent access",
+          "website": "https://firecrawl.dev",
+          "logoUrl": "https://logo.clearbit.com/firecrawl.dev",
+          "twitter": "https://x.com/firecrawl_dev"
+        }
+      ]
+    },
+    {
+      "id": "inference",
+      "name": "Inference",
+      "color": "#00D4FF",
+      "description": "Decentralized and onchain AI inference infrastructure built on Base",
+      "projects": [
+        {
+          "id": "venice",
+          "name": "Venice LLM",
+          "description": "Private, decentralized AI inference with uncensored models on Base",
+          "website": "https://venice.ai",
+          "logoUrl": "https://logo.clearbit.com/venice.ai",
+          "twitter": "https://x.com/venice_ai"
+        },
+        {
+          "id": "blockrun",
+          "name": "Blockrun.ai",
+          "description": "Onchain AI compute and inference marketplace on Base",
+          "website": "https://blockrun.ai",
+          "logoUrl": "https://logo.clearbit.com/blockrun.ai",
+          "twitter": "https://x.com/blockrunai"
+        }
+      ]
+    },
+    {
+      "id": "defi",
+      "name": "Trading & DeFi",
+      "color": "#00E5A0",
+      "description": "Decentralized exchanges and lending protocols powering DeFi on Base",
+      "projects": [
+        {
+          "id": "uniswap",
+          "name": "Uniswap",
+          "description": "The leading decentralized exchange protocol with deep liquidity on Base",
+          "website": "https://app.uniswap.org",
+          "logoUrl": "https://logo.clearbit.com/uniswap.org",
+          "twitter": "https://x.com/Uniswap"
+        },
+        {
+          "id": "morpho",
+          "name": "Morpho",
+          "description": "Efficient and permissionless lending protocol deployed on Base",
+          "website": "https://morpho.org",
+          "logoUrl": "https://logo.clearbit.com/morpho.org",
+          "twitter": "https://x.com/MorphoLabs"
+        }
+      ]
+    }
+  ]
+}

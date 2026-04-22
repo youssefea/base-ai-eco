@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Base AI Ecosystem
 
-## Getting Started
+An interactive 3D galaxy visualization of the Base AI ecosystem. Explore protocols, wallets, inference networks, and DeFi projects building on Base — navigate like a galaxy.
 
-First, run the development server:
+---
+
+## Features
+
+- **3D galaxy** — four solar systems (Wallets, x402, Inference, Trading & DeFi), each with orbiting planet-projects
+- **Keyboard navigation** — arrow keys to move between systems, Enter to zoom in, ESC to zoom out, `/` to search
+- **Search** — type to highlight matching projects across all systems
+- **Ecosystem Map** — a shareable 1200×630 PNG market map at `/ecosystem-image`
+- **Open contribution** — two JSON files anyone can PR to add their project
+
+## Keyboard shortcuts
+
+| Key | Action |
+|-----|--------|
+| `← ↑` | Previous solar system |
+| `→ ↓` | Next solar system |
+| `Enter` | Zoom into selected system |
+| `Esc` | Zoom out / close overlay |
+| `/` | Focus search bar |
+
+## Local development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The ecosystem image is available at [http://localhost:3000/ecosystem-image](http://localhost:3000/ecosystem-image).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deploying
 
-## Learn More
+This app is optimized for [Vercel](https://vercel.com). Connect your repo and deploy — no environment variables required.
 
-To learn more about Next.js, take a look at the following resources:
+## Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for instructions on how to add your project to the galaxy or the ecosystem image.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Adding to the **galaxy** (`data/galaxy.json`) is open to most projects
+- Adding to the **ecosystem image** (`data/ecosystem-image.json`) requires demonstrated traction
 
-## Deploy on Vercel
+**These must be separate PRs.**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Data files
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| File | Description |
+|------|-------------|
+| `data/galaxy.json` | All projects shown in the 3D galaxy |
+| `data/ecosystem-image.json` | Curated subset shown in the shareable image |
+
+## Tech stack
+
+- [Next.js 16](https://nextjs.org) — App Router
+- [React Three Fiber](https://docs.pmnd.rs/react-three-fiber) — 3D rendering
+- [@react-three/drei](https://github.com/pmndrs/drei) — Three.js helpers
+- [GSAP](https://gsap.com) — camera animations
+- [next/og](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/opengraph-image) — ecosystem image generation
+- [Tailwind CSS](https://tailwindcss.com)
+- Deployed on [Vercel](https://vercel.com)
+
+## License
+
+MIT
