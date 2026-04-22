@@ -7,7 +7,9 @@ const geist = Geist({
   subsets: ["latin"],
 });
 
-const metadataBase = new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000");
+const metadataBase = new URL(
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://buildaionbase.xyz"
+);
 
 export const metadata: Metadata = {
   metadataBase,
@@ -19,11 +21,15 @@ export const metadata: Metadata = {
     description: "Interactive 3D galaxy of projects building on Base.",
     type: "website",
     siteName: "Base AI Ecosystem",
+    url: "https://buildaionbase.xyz",
   },
   twitter: {
     card: "summary_large_image",
     title: "Base AI Ecosystem",
     description: "Interactive 3D galaxy of projects building on Base.",
+  },
+  alternates: {
+    canonical: "https://buildaionbase.xyz",
   },
 };
 
