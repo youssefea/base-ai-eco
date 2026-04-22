@@ -132,6 +132,7 @@ export default async function OpengraphImage() {
               </div>
               <div
                 style={{
+                  display: "flex",
                   fontSize: 14,
                   fontWeight: 700,
                   letterSpacing: "0.24em",
@@ -155,12 +156,13 @@ export default async function OpengraphImage() {
                 marginBottom: 22,
               }}
             >
-              <div>Base AI</div>
-              <div>Ecosystem</div>
+              <div style={{ display: "flex" }}>Base AI</div>
+              <div style={{ display: "flex" }}>Ecosystem</div>
             </div>
 
             <div
               style={{
+                display: "flex",
                 fontSize: 22,
                 lineHeight: 1.45,
                 color: "rgba(227,241,255,0.72)",
@@ -168,9 +170,7 @@ export default async function OpengraphImage() {
                 marginBottom: 28,
               }}
             >
-              An interactive 3D galaxy of {totalCompanies} projects building the
-              agentic stack on Base — wallets, x402, inference, and onchain
-              data.
+              {`An interactive 3D galaxy of ${totalCompanies} projects building the agentic stack on Base — wallets, x402, inference, and onchain data.`}
             </div>
 
             {/* Category chips */}
@@ -205,6 +205,7 @@ export default async function OpengraphImage() {
                   />
                   <div
                     style={{
+                      display: "flex",
                       fontSize: 14,
                       fontWeight: 700,
                       color: "#f5fbff",
@@ -215,12 +216,13 @@ export default async function OpengraphImage() {
                   </div>
                   <div
                     style={{
+                      display: "flex",
                       fontSize: 12,
                       fontWeight: 700,
                       color: "rgba(227,241,255,0.55)",
                     }}
                   >
-                    {category.projects.length}
+                    {String(category.projects.length)}
                   </div>
                 </div>
               ))}
@@ -273,8 +275,9 @@ export default async function OpengraphImage() {
                   boxShadow: "0 0 12px rgba(0,82,255,0.9)",
                 }}
               />
-              {totalCompanies} companies · {ecosystemData.categories.length}{" "}
-              ecosystems
+              <div style={{ display: "flex" }}>
+                {`${totalCompanies} companies · ${ecosystemData.categories.length} ecosystems`}
+              </div>
             </div>
           </div>
         </div>
@@ -373,6 +376,7 @@ export default async function OpengraphImage() {
                 />
                 <div
                   style={{
+                    display: "flex",
                     fontSize: 11,
                     fontWeight: 700,
                     letterSpacing: "0.14em",
