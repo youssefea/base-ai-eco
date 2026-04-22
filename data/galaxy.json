@@ -149,6 +149,14 @@
           "website": "https://blockrun.ai",
           "logoUrl": "https://logo.clearbit.com/blockrun.ai",
           "twitter": "https://x.com/blockrunai"
+        },
+        {
+          "id": "libertai",
+          "name": "LibertAI",
+          "description": "Confidential AI inference on Aleph Cloud TEEs & self-sustaining agents with wallets paying via x402",
+          "website": "https://libertai.io",
+          "logoUrl": "https://libertai.io/favicon.svg",
+          "twitter": "https://x.com/Libertai_DAI"
         }
       ]
     },
