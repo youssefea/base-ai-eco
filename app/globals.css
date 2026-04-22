@@ -252,6 +252,196 @@ main {
   gap: 10px;
 }
 
+.hud-left-panel {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  z-index: 40;
+  width: min(320px, calc(100vw - 48px));
+}
+
+.hud-right-panel {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 40;
+  width: min(320px, calc(100vw - 48px));
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.hud-right-panel > .hud-panel {
+  width: 100%;
+}
+
+.hud-bottom-left {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hud-bottom-right {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 40;
+}
+
+.hud-icon-button {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(174, 214, 255, 0.18);
+  color: rgba(227, 241, 255, 0.78);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition:
+    background 0.18s ease,
+    border-color 0.18s ease,
+    transform 0.18s ease;
+}
+
+.hud-icon-button:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(174, 214, 255, 0.34);
+  transform: translateY(-1px);
+}
+
+.hud-collapsed-bubble {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 14px;
+  min-width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  background:
+    linear-gradient(180deg, rgba(12, 28, 60, 0.66), rgba(4, 12, 30, 0.78)),
+    var(--panel-bg);
+  border: 1px solid rgba(174, 214, 255, 0.22);
+  backdrop-filter: blur(20px);
+  color: #f5fbff;
+  cursor: pointer;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 22px 44px rgba(0, 0, 0, 0.32);
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease,
+    background 0.18s ease;
+  position: relative;
+}
+
+.hud-collapsed-bubble:hover {
+  transform: translateY(-1px);
+  border-color: rgba(174, 214, 255, 0.36);
+}
+
+.hud-collapsed-dot {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid rgba(4, 12, 30, 0.9);
+}
+
+@media (max-width: 900px) {
+  .hud-left-panel {
+    top: 16px;
+    left: 16px;
+    width: min(300px, calc(100vw - 32px));
+  }
+
+  .hud-right-panel {
+    top: 16px;
+    right: 16px;
+    width: min(300px, calc(100vw - 32px));
+  }
+
+  .hud-bottom-left {
+    bottom: 16px;
+    left: 16px;
+  }
+
+  .hud-bottom-right {
+    bottom: 16px;
+    right: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Both panels live in their collapsed (bubble) state on mobile, so they
+     don't need a wide footprint. Search moves to the bottom and the
+     keyboard hints disappear since there is no keyboard. */
+  .hud-left-panel,
+  .hud-right-panel {
+    width: auto;
+  }
+
+  .hud-bottom-left {
+    display: none;
+  }
+
+  .hud-panel {
+    border-radius: 18px;
+  }
+
+  .hud-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .map-link {
+    padding: 10px 12px;
+    font-size: 11px;
+    border-radius: 14px;
+  }
+
+  .map-link-label {
+    display: none;
+  }
+
+  .planet-hover-card {
+    width: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hud-left-panel,
+  .hud-right-panel {
+    top: 12px;
+  }
+
+  .hud-left-panel {
+    left: 12px;
+  }
+
+  .hud-right-panel {
+    right: 12px;
+  }
+
+  .hud-bottom-right {
+    bottom: 12px;
+    right: 12px;
+  }
+}
+
 .system-nav-button {
   appearance: none;
   width: 100%;
@@ -307,64 +497,20 @@ main {
   box-shadow: 0 28px 60px rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
+  /* Pin search to the bottom of the viewport above the map-link button so
+     the two never overlap. */
   .search-container {
     top: auto !important;
-    bottom: 20px;
+    bottom: 72px !important;
     left: 16px !important;
-    right: 16px;
+    right: 16px !important;
     width: auto !important;
     max-width: none !important;
     transform: none !important;
   }
 
-  .hud-left-panel {
-    top: 16px !important;
-    left: 16px !important;
-    right: 16px;
-    width: auto !important;
-  }
-
-  .hud-right-panel {
-    top: auto !important;
-    bottom: 88px !important;
-    left: auto !important;
-    right: 16px !important;
-    width: min(320px, calc(100vw - 32px)) !important;
-  }
-
-  .hud-bottom-left {
-    display: none;
-  }
-
-  .hud-bottom-right {
-    bottom: 20px !important;
-    right: 16px !important;
-  }
-
-  .hud-panel {
-    border-radius: 20px;
-  }
-
-  .hud-stat {
-    min-width: 94px;
-  }
-
-  .system-nav-list {
-    grid-template-columns: 1fr;
-  }
-
-  .planet-hover-card {
-    width: 220px;
-  }
-}
-
-@media (max-width: 720px) {
   .galaxy-backdrop {
-    opacity: 0.2;
-  }
-
-  .system-nav-list {
-    grid-template-columns: 1fr;
+    opacity: 0.22;
   }
 }
