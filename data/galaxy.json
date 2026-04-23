@@ -125,6 +125,14 @@
           "website": "https://firecrawl.dev",
           "logoUrl": "https://logo.clearbit.com/firecrawl.dev",
           "twitter": "https://x.com/firecrawl_dev"
+        },
+        {
+          "id": "pqs",
+          "name": "Prompt Quality Score (PQS)",
+          "description": "Quality score for AI agent prompts operating in the x402 economy on Base",
+          "website": "https://promptqualityscore.com",
+          "logoUrl": "https://promptqualityscore.com/favicon.png",
+          "twitter": "https://x.com/kenburbary"
         }
       ]
     },
