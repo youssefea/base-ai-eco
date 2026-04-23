@@ -185,7 +185,7 @@
         {
           "id": "fx-protocol",
           "name": "f(x) Protocol",
-          "description": "fxUSD: a scalable & decentralized stablecoin backed by wstETH and WBTC, bridged to Base to natively support x402 and integrate with Heurist, Hydrex, Morpho Base market, and Bankr Skill.",
+          "description": "fxUSD: decentralized stablecoin backed by wstETH & WBTC, bridged to Base with x402 support.",
           "website": "https://fx.aladdin.club",
           "logoUrl": "https://raw.githubusercontent.com/AladdinDAO/aladdin-assets/main/images/branding/f-logo.png",
           "twitter": "https://x.com/protocol_fx"
