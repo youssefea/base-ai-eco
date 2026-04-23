@@ -181,6 +181,14 @@
           "website": "https://morpho.org",
           "logoUrl": "https://logo.clearbit.com/morpho.org",
           "twitter": "https://x.com/MorphoLabs"
+        },
+        {
+          "id": "fx-protocol",
+          "name": "f(x) Protocol",
+          "description": "fxUSD: a scalable & decentralized stablecoin backed by wstETH and WBTC, bridged to Base to natively support x402 and integrate with Heurist, Hydrex, Morpho Base market, and Bankr Skill.",
+          "website": "https://fx.aladdin.club",
+          "logoUrl": "https://raw.githubusercontent.com/AladdinDAO/aladdin-assets/main/images/branding/f-logo.png",
+          "twitter": "https://x.com/protocol_fx"
         }
       ]
     }
