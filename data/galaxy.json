@@ -125,6 +125,14 @@
           "website": "https://firecrawl.dev",
           "logoUrl": "https://logo.clearbit.com/firecrawl.dev",
           "twitter": "https://x.com/firecrawl_dev"
+        },
+        {
+          "id": "filingdelta",
+          "name": "FilingDelta",
+          "description": "Cited cards on SEC filing changes, central-bank decisions and US macro data, paid in USDC via x402",
+          "website": "https://filingdelta.xyz",
+          "logoUrl": "https://github.com/Filingdelta.png",
+          "twitter": "https://x.com/FilingDeltax402"
         }
       ]
     },
